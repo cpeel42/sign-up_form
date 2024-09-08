@@ -19,35 +19,35 @@
         </div>
         <div class="right">
             <div class="top">
-                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h2>
-                <h2>You know you want to.</h2>
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</h2>
+                <h2>You <i>know</i> you want to.</h2>
             </div>
             <div class="middle">
                 <h2>Let's do this!</h2>
                 <form action="" method="post">
                     <div class="input">
                         <label for="first_name">First Name</label>
-                        <input name="first_name" id="first_name" type="text">
+                        <input required name="first_name" id="first_name" type="text" pattern="^[a-zA-Z]+$">
                     </div>
                     <div class="input">
                         <label for="last_name">Last Name</label>
-                        <input name="last_name" id="last_name" type="text">
+                        <input required name="last_name" id="last_name" type="text" pattern="^[a-zA-Z]+$">
                     </div>
                     <div class="input">
                         <label for="email">Email</label>
-                        <input name="email" id="email" type="text">
+                        <input required name="email" id="email" type="text" pattern="^\S+@\S+\.\S+$">
                     </div>
                     <div class="input">
                         <label for="phone">Phone Number</label>
-                        <input name="phone" id="phone" type="text">
+                        <input required name="phone" id="phone" type="text" minlength="10" pattern="\d+">
                     </div>
                     <div class="input">
                         <label for="password">Password</label>
-                        <input name="password" id="password" type="text">
+                        <input required name="password" id="password" type="text" minlength="8">
                     </div>
                     <div class="input">
                         <label for="password_confirm">Confirm Password</label>
-                        <input name="password_confirm" id="password_confirm" type="text">
+                        <input required name="password_confirm" id="password_confirm" type="text" minlength="8">
                     </div>
                 </form>
             </div>

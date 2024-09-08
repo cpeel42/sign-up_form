@@ -13,11 +13,12 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
+    text-wrap: pretty;
 }
 
 .main {
     display: flex;
-    flex: 1;
+    flex: auto;
 }
 
 /* Stuff for left side */
@@ -41,7 +42,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    gap: 1vw;
+    gap: 2%;
     width: 100%;
     position: absolute;
     top: 25%;
@@ -58,7 +59,7 @@ body {
 }
 
 .icon {
-    height: 6vh;
+    height: 5vh;
     filter: invert(100%);
 }
 
@@ -125,6 +126,14 @@ button {
     background-color:olivedrab;
     border-radius: 1vh;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 2vh;
+}
+
+:focus {
+    outline-color: blue;
+}
+
+:invalid {
+    outline-color: red;
 }
